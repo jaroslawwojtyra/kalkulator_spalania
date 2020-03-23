@@ -11,7 +11,21 @@ let petrol = {
   fuel : 30,
 };
 let petrolPrice = 5;
-// Przygotować kalkulator porównawczy w zależności od
-// ilości km które przejeżdżamy w mieście i na trasie miesięcznie
-// Kalkulator oblicza ile pieniędzy wydamy na jeden samochód i
-// na drugi i pokazuje który jest bardziej opłacalny
+
+const sliderCity = document.getElementById('sliderCity');
+const sliderRoad = document.getElementById('sliderRoad');
+const kmCity = document.getElementById('kmCity');
+const kmRoad = document.getElementById('kmRoad');
+
+sliderCity.addEventListener('click', setCity)
+  function setCity() {
+      kmCity.value = sliderCity.value;
+  };
+
+sliderRoad.addEventListener('click', setRoad);
+  function setRoad() {
+  	 kmRoad.value = sliderRoad.value;
+  };
+
+setCity();
+setRoad();

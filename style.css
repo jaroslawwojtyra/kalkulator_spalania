@@ -1,7 +1,33 @@
+.main {
+  background-color:lightblue;
+  text-align:center;
+}
+
+.car {
+  float:left;
+  background-color:lightgrey;
+  min-height:150px;
+  width: 21%;
+  text-align:center;
+  border-style: solid;
+  border-color: black;
+  margin-right: 2%;
+  margin-left: 2%
+}
+
+#calc {
+  width: 45%
+}
+
+.author {
+  clear:both;
+  text-align:center;
+}
+
 .slider {
   -webkit-appearance: none;
   appearance: none;
-  width: 100%;
+  width: 99%;
   height: 25px;
   background: lightgrey;
   outline: none;
