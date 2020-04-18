@@ -19,23 +19,23 @@
     </div>
     <div class="car" id="calc">
       <h2>Kalkulator</h2>
-      <div class="label">Kilometry przejechane w mieście
+      <div class="cityKm">
+        <p class="label">Kilometry przejechane w mieście</p>
         <input type="range" min="0" max="1000" step="10" value="50" class="slider" id="sliderCity">
-        <input type="number" id="kmCity">
+        <input type="number" min="0" max="1000" step="10" class="input" id="kmCity">
       </div>
-      <div class="label">Kilemetry przejechane poza miastem</p>
+      <div class="roadKm">
+        <p class="label">Kilemetry przejechane poza miastem</p>
         <input type="range" min="0" max="1000" step="10" value="50" class="slider" id="sliderRoad">
-        <input type="number" id="kmRoad">
+        <input type="number" min="0" max="1000" step="10" class="input" id="kmRoad">
       </div>
-      <div class="label">Sprawdź teraz </br>
-        <button type="button" name="button">Oblicz</button>
+      <div class="check">
+        <p class="label">Sprawdź teraz</p>
+        <button type="button" class="button" name="button">Oblicz</button>
       </div>
     </div>
     <div class="author">
       <b>Autor: Jarosław Wojtyra - v. 1.0 - 20.03.2020 r. <a href="mailto:jaroslawwojtyra@gmail.com?subject=kalkulator_spalania">napisz</a></b>
-    </div>
-    <div class="author">
-      <b>Autor: Jaros20.03.2020 r. <a href="mailto:jaroslawwojtyra@gmail.com?subject=kalkulator_spalania">napisz</a></b>
     </div>
     <script src="script.js"></script>
   </body>
