@@ -6,9 +6,9 @@ let hybrid = {
 };
 let petrol = {
   name : 'seat',
+  fuel : 30,
   combustion_city : 4,
   combustion_road : 7,
-  fuel : 30,
 };
 let petrolPrice = 5;
 const sliderCity = document.getElementById('sliderCity');
@@ -39,9 +39,20 @@ function checkScore() {
   let petrolRoadScore = kmRoad.value * petrol.combustion_road
   let hybridScore = hybridCityScore + hybridRoadScore
   let petrolScore = petrolCityScore + petrolRoadScore
-  console.log(hybridScore);
-  console.log(petrolScore);
+
+  if (hybridScore > petrolScore) {
+    score.innerHTML = `Wybierz hybrydę - koszt paliwa: ${hybridScore} zł`
   }
+  else if (hybridScore < petrolScore) {
+    score.innerHTML = `Wybierz benzynę - koszt paliwa: ${petrolScore} zł`
+  }
+  else if (hybridScore = petrolScore) {
+    score.innerHTML = `Wydatki są równe - koszt paliwa: ${petrolScore} zł`
+  }
+  else {
+    score.innerHTML = "Niestety nie działam"
+  }
+};
 
 sliderCity.addEventListener('click', setCity);
 sliderRoad.addEventListener('click', setRoad);
