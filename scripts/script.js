@@ -17,6 +17,8 @@ const kmCity = document.getElementById('kmCity');
 const kmRoad = document.getElementById('kmRoad');
 const score = document.getElementById('score');
 const button = document.getElementById('button');
+const car1 = document.getElementById('car1');
+const car2 = document.getElementById('car2');
 
 function setCity() {
     kmCity.value = sliderCity.value;
@@ -41,11 +43,14 @@ function checkScore() {
   let petrolScore = petrolCityScore + petrolRoadScore
 
   if (hybridScore > petrolScore) {
-    score.innerHTML = `Wybierz hybrydę - koszt paliwa: ${hybridScore} zł`
+    score.innerHTML = `Wybierz hybrydę - koszt paliwa: ${hybridScore} zł`;
+    car1.style.background = "lightblue";
+    car2.style.background = "aliceblue";
   }
   else if (hybridScore < petrolScore) {
     score.innerHTML = `Wybierz benzynę - koszt paliwa: ${petrolScore} zł`
-  }
+    car2.style.background = "lightblue";
+    car1.style.background = "aliceblue";  }
   else if (hybridScore = petrolScore) {
     score.innerHTML = `Wydatki są równe - koszt paliwa: ${petrolScore} zł`
   }
