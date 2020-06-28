@@ -2,11 +2,18 @@ body{
   font: calibri;
   font-size: 14px;
 }
+
 h2 {
   font-size: 28px;
   color: black;
   text-shadow: 4px 4px 8px grey;
 }
+
+img {
+  width: 70%;
+  height: 250px;
+}
+
 .main {
   background-color:lightblue;
   text-align:center;

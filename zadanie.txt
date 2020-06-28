@@ -1,0 +1,14 @@
+Przygotować kalkulator porównania opłacalności
+samochodu elektryczny i spalinowy
+Samochód spalinowy spala 5l /100km w trasie a w mieście 8l/100km
+Samochód z napędem hybrydowym spala 7l /100km
+w trasie a w mieście 4l/100km
+Przygotować kalkulator porównawczy
+w zależności od ilości km które przejeżdżamy w mieście
+i na trasie miesięcznie
+Kalkulator oblicza ile pieniędzy wydamy
+na jeden samochód i na drugi i pokazuje który jest bardziej opłacalny
+wygląd podobny do wyglądu jak na schemacie
+
+Photo by Martin Katler on Unsplash
+Photo by Viktor Theo on Unsplash
